@@ -1,7 +1,12 @@
-<h2>Products</h2>
+<div>
+  <div class="header">
+    <h2>Products</h2>
+    <button [routerLink]="['contact']">Contact</button>
+  </div>
 
-<div *ngFor="let pro of prod">
-  <h3 class="pro_name">{{ pro.name }}</h3>
-  <p>{{ pro.description }}</p>
-  <button type="button" (click)="share()">Share Now</button>
+  <div *ngFor="let pro of prod">
+    <h3 class="pro_name">{{ pro.name }}</h3>
+    <p>{{ pro.description }}</p>
+    <button type="button" (click)="share()">Share Now</button>
+  </div>
 </div>
